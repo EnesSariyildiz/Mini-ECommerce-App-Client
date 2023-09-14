@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+declare var alertify: any;
 
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.css']
+  styleUrls: ['./layout.component.css'],
 })
 export class LayoutComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+    alertify.alert('Ready');
   }
-
 }
